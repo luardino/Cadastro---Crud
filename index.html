@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="ãuthor" content="Luardino Jaime">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Crud para cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span>Cadastro de Funcionários</span>
+            <button onclick="openModal()" id="new">Incluir</button>
+        </div>
+
+        <div class="divTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Função</th>
+                        <th>Salário</th>
+                        <th class="acao">Editar</th>
+                        <th class="acao">Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="modal-container">
+            <div class="modal">
+                <form>
+                    <label for="m-nome">Nome</label>
+                    <input id="m-nome" type="text" required/>
+
+                    <label for="m-funcao">Função</label>
+                    <input id="m-funcao" type="text" required>
+
+                    <label for="m-salario">Salário</label>
+                    <input type="text" id="m-salario" required>
+
+                    <button id="btnSalvar">Salvar</button>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
